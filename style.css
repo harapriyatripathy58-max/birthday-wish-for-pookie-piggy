@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    background: linear-gradient(to right, #ffccff, #ccffff);
+    font-family: Arial;
+}
+
+.piggy {
+    width: 150px;
+    animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(20px); }
+}
+
+.hidden {
+    display: none;
+}
+
+.cake {
+    font-size: 80px;
+    margin-top: 20px;
+    animation: pop 1s;
+}
+
+.gift {
+    font-size: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@keyframes pop {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
